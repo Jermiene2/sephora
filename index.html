@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title-->
+    <title>Sephora's Beauty</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
+    <style>
+        /* Global Styles */
+        body {
+            background-color: black;
+            color: white;
+            border: 25px solid black;
+            border-bottom: 10px solid black;
+            margin: 0;
+            padding: 0;
+        }
+    
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        img {
+            width: 75px;
+            height: 75px;
+        }
+    
+        /* Headings */
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            letter-spacing: 3px;
+            margin: -10px;
+        }
+    
+        h2 {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 400;
+            margin: 10px 0 0 0;
+        }
+    
+        h3 {
+            font-family: 'Silkscreen', sans-serif;
+            font-weight: 400;
+            margin: -10px;
+            padding: 0 25px;
+            text-align: right;
+        }
+    
+        /* Box 1-2 */
+        .red-line {
+            background-color: #cd0000;
+            height: 30px;
+            width: calc(100% - 50px);
+            margin: -10px 25px;
+            position: relative;
+        }
+    
+        .box {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 25px;
+            position: relative;
+        }
+    
+        .left-side1 {
+            display: flex;
+            align-items: flex-end;
+            gap: 15px;
+        }
+    
+        .box2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 25px;
+        }
+    
+        .right-side1 {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+    
+        /* Input Box */
+        .input-box {
+            height: 30px;
+            font-family: 'Cairo', sans-serif;
+            font-size: 16px;
+            padding: 5px;
+            color: black;
+            background-color: white;
+            border: 1px solid white;
+            outline: none;
+            margin: 0 10px;
+        }
+    
+        /* Random Box */
+        .randombox {
+            text-align: center;
+            color: red;
+        }
+    
+        .randombox a {
+            color: red;
+            text-decoration: none;
+        }
+    
+        /* Box 3-4 */
+        .box3-4 {
+            display: flex;
+            margin-top: 30px;
+            max-height: 33vw;
+            align-items: flex-start;
+        }
+    
+        .box3 {
+            width: 50%;
+            padding: 25px;
+            height: 100%;
+        }
+    
+        .first-left-line-box3 {
+            font-size: 50px;
+            display: inline;
+        }
+    
+        .icon3 {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 0px;
+            object-fit: cover;
+        }
+    
+        .box4 {
+            background-image: url(icon_4.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 50%;
+            height: 100%;
+            padding: 25px;
+            color: black;
+        }
+    
+        .box4 p {
+            font-size: 20px;
+            letter-spacing: 2px;
+            margin-top: 16px;
+        }
+    
+        /* Box 5-7 */
+        .box5-7 {
+            display: flex;
+            padding: 25px;
+            align-items: flex-start;
+        }
+    
+        .box5, .box6, .box7 {
+            flex: 1;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+    
+        .box5 {
+            max-width: 33%;
+        }
+    
+        .first-left-line-box5 {
+            display: inline;
+        }
+    
+        .box5 a {
+            text-decoration: underline;
+        }
+    
+        .box5 img {
+            width: 150px;
+            height: 150px;
+        }
+    
+        .box6 {
+            text-align: center;
+            margin-top: -25px;
+        }
+    
+        .top-sellers-box {
+            border: 1px solid white;
+            width: 200px;
+            height: 200px;
+            margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            color: white;
+        }
+    
+        .box7 {
+            text-align: center;
+            margin-top: -15px;
+        }
+    
+        .box7 a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    
+        .box7 img {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <!--box 1 -->
+    <div class="box">
+        <div class="left-side1">
+            <img src="icon_1.png" alt="Sephora">
+            <h1>
+                <a href="https://www.sephora.com" target="_blank">SEPHORA.COM</a>
+            </h1>
+        </div>
+        <h3>
+            <a href="https://www.sephora.com" target="_blank">SIGN IN</a> ┃
+            <a href="https://www.sephora.com" target="_blank">REGISTER</a> ┃
+            <a href="https://www.sephora.com" target="_blank">SHOPPING BASKET</a> ┃
+            <a href="https://www.sephora.com" target="_blank">CUSTOMER SERVICE</a> ┃
+            <a href="https://www.sephora.com" target="_blank">HELP</a>
+        </h3>
+    </div>
+
+    <!--red line -->
+    <div class="red-line"></div>
+
+    <!--box 2 -->
+    <div class="box2">
+        <h2>
+            <a href="https://www.sephora.com" target="_blank">FRAGRANCE</a> ┃
+            <a href="https://www.sephora.com" target="_blank">COLOR</a> ┃
+            <a href="https://www.sephora.com" target="_blank">TREATMENT</a> ┃
+            <a href="https://www.sephora.com" target="_blank">SEPHORA COLLECTION</a> ┃
+            <a href="https://www.sephora.com" target="_blank">GIFTS</a> ┃
+            <a href="https://www.sephora.com" target="_blank">MAGAZINE</a>
+        </h2>
+        <div class="right-side1">
+            <h3>
+                <a href="https://www.sephora.com" target="_blank">SEARCH</a>
+            </h3>
+            <input type="text" class="input-box" placeholder="">
+            <h3>
+                <a href="https://www.sephora.com" target="_blank">GO</a>
+            </h3>
+        </div>
+    </div>
+
+    <!--random box -->
+    <div class="randombox">
+        <p style="margin-bottom: -15px; padding-right: 20px;">register</p>
+        <p style="margin-bottom: -15px; padding-left: 40px;">and receive</p>
+        <p style="color: red;">
+            <a href="https://www.sephora.com" target="_blank">a FREE GIFT!</a>
+        </p>
+    </div>
+
+    <!--box3-4 -->
+    <div class="box3-4">
+
+        <!--box 3 -->
+        <div class="box3">
+            <p class="first-left-line-box3">shop</p>
+            <p class="first-left-line-box3" style="color: gray;">sephora.com</p>
+            <p style="font-size: 20px; margin-top: -4px; letter-spacing: 2px; color: gray;">THE MOST BEAUTY ONLINE</p>
+            <p style="font-size: 20px; margin-top: -4px; letter-spacing: 2px; color: red;">WHAT'S IN STORE</p>
+            <a href="#" style="font-size: 40px; letter-spacing: 2px; color: #5b9dfb; text-decoration: none;">Givenchy Oblique<br>Fast Forward</br></a>
+            <p style="font-size: 20px; letter-spacing: 2px;">A fresh clean scent encased<br>in a hip, techno-bottle</br></p>
+            <h3 style="text-align: left; margin: 0;">
+                <a href="https://www.sephora.com" target="_blank">
+                    <img src="icon_3.png" alt="Icon" class="icon3">BUY
+                </a>
+            </h3>
+            <img src="icon_2.png" alt="Right side image" style="float: right; margin-top: 20px; width: 300px; height: 340px; position: relative; top: -300px">
+        </div>
+
+        <!--box 4 -->
+        <div class="box4">
+            <p class="first-left-line-box3" style="font-size: 50px; letter-spacing: 3px; margin-top: 0; padding: 0;">magazine</p>
+            <p>WHAT'S INSIDE</p>
+            <p style="font-size: 40px;">FALL 2000</p>
+            <p>RUNWAY SEX APPEAL</p>
+            <p>NIGHT AND DAY MAKEUP</p>
+            <p>HUES IN THE NEWS</p>
+            <h3 style="text-align: left; margin: 0;">
+                <a href="https://www.sephora.com" target="_blank">
+                    <img src="icon_3.png" alt="Icon" class="icon3">MORE
+                </a>
+            </h3>
+        </div>
+    </div>
+
+    <!--box 5-7 -->
+    <div class="box5-7">
+
+        <!--box 5 -->
+        <div class="box5">
+            <p class="first-left-line-box5" style="color: red; font-size: 30px;">SEPHORA</p>
+            <p class="first-left-line-box5" style="font-size: 25px;">on Sixth</p>
+            <p style="font-size: 20px; margin-top: 2px;">Exclusive Beauty Trend Reports<br>from New York's Fashion Week</p>
+            <p style="font-size: 20px; margin-top: -14px;">
+                <a href="https://www.sephora.com" target="_blank">Click here.</a>
+            </p>
+            <img src="icon_7.jpg" alt="celebrity">
+            <p style="font-size: 20px; color: red; letter-spacing: 1px; margin-top: -150px; margin-left: 160px;">EMMY / MTV<br>AWARDS CELEBRITY<br>MAKEUP LOOKS.</p>
+        </div>
+
+        <!--box 6 -->
+        <div class="box6">
+            <p style="font-size: 20px; color: red; letter-spacing: 3px;">TOP SELLERS</p>
+            <div class="top-sellers-box">
+                <img src="invalid-image-url.png">
+                <span style="font-size: 25px; margin-top: -75px; margin-left: -30px;">Top Sellers</span>
+            </div>
+        </div>
+
+        <!--box 7 -->
+        <div class="box7">
+            <p style="font-size: 25px; color: red; letter-spacing: 5px;">A NEW WAY TO SHOP</p>
+            <p style="font-size: 20px; margin-top: -25px;">Discover our brand boutiques:</p>
+            <a href="https://www.clubmonaco.com" target="_blank">
+                <img src="icon_5.png" alt="club-monaco">
+            </a>
+            <a href="https://www.bourjois.com" target="_blank">
+                <img src="icon_6.png" alt="bourjois-paris">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
